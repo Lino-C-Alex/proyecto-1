@@ -1,0 +1,34 @@
+.main__header .portada {
+  background-image: url(../img/kansai.jpg);
+}
+
+/* ----------------------------------------------------- */
+
+/*                   CUERPO DE LA PÀGINA                */
+
+.section-2 .card-1 {
+  background-image: url(../img/kansai\ section2-a.jpg);
+}
+.section-2 .card-2 {
+  background-image: url(../img/kansai\ section2-b.jpg);
+}
+.section-2 .card-3 {
+  background-image: url(../img/kansai\ section2-c.jpg);
+}
+.section-2 .card-4 {
+  background-image: url(../img/kansai\ section2-d.jpg);
+}
+
+.section-4 .card-zonas .card-1 {
+  background-image: url(../img/kansai\ section4-a.jpg);
+}
+
+.section-4 .card-zonas .card-2 {
+  background-image: url(../img/kansai\ section4-b.jpg);
+}
+.section-4 .card-zonas .card-3 {
+  background-image: url(../img/kansai\ section4-c.jpg);
+}
+.section-4 .card-zonas .card-4 {
+  background-image: url(../img/kansai\ section4-d.jpg);
+}

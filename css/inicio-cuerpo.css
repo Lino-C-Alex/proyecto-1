@@ -1,0 +1,403 @@
+/* CONTENEDOR PRINCIPAL */
+.maincontainer {
+  background-color: #f0f0f0;
+  height: auto;
+}
+/* ----------------------------------------------------- */
+
+/*                   CUERPO DE LA PÀGINA                */
+.main {
+}
+
+/*section, Clase general para los section */
+.section {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  PRIMER SECTION */
+.section-0 {
+  background-image: radial-gradient(circle, #ebb215, #dab447);
+  margin-top: 50px;
+}
+
+.section-0 .article {
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.section-0 .article .icon {
+  color: #f6f6f6;
+  padding: 0;
+  border: none;
+  font-size: 70px;
+  cursor: auto;
+}
+.section-0 .title {
+  color: #f6f6f6;
+  font-size: 25pt;
+  padding: 10px;
+}
+
+.section-0 .text {
+  padding: 15px;
+  text-align: justify;
+  font-size: 13pt;
+  line-height: 20px;
+}
+
+.section-0 strong {
+  color: #1b1b1b;
+  font-size: 14pt;
+}
+
+/*  SEGUNDO SECTION */
+.section-1 {
+  height: auto;
+}
+
+.section-1 .title {
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  padding: 0 20px;
+  margin: 50px;
+  font-size: 25pt;
+}
+
+/*  header contenedor de la info que se muestra sin que se despliegue */
+.section-1 .header__section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón que despliega el menú para elegir o ver destinos */
+.section-1 .header__section .fa-bars {
+  background-color: #1b1b1b;
+  border: 2px solid transparent;
+  color: #fff;
+  width: 100%;
+  display: block;
+  margin: 3px auto;
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+.section-1 .header__section .fa-bars:hover {
+  color: #cf7500;
+  border: 2px solid #cf7500;
+  background-color: #000;
+  box-shadow: 0 0 10px #cf7500, 0 0 40px #cf7500, 0 0 80px #cf7500;
+}
+
+/* div contenedor del nav */
+.section-1 .header__section .lugares {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* nav, contenedor de la lista */
+.nav-lugares {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* ul, contenedor de los li */
+.menu-lugares {
+  background-color: #000000f5;
+  text-align: center;
+  /* Para que se encoja hacia arriba  */
+  margin-top: -200%;
+  /* Transicion para que se muestre  */
+  transition: all 2s;
+}
+
+/* li, dentro del ul */
+.menu-lugares .menu__item {
+  border-bottom: 2px solid transparent;
+  padding: 10px 0;
+  transition: all 0.5s;
+}
+.menu-lugares .menu__item:hover {
+  border-bottom: 2px solid #cf7500;
+}
+
+.menu-lugares .menu__item:hover a {
+  color: #cf7500;
+}
+
+/* a, dentro s los li */
+.menu-lugares .menu__item a {
+  color: #f6f6f6;
+  display: block;
+  padding: 5px;
+  font-size: 14pt;
+  transition: all 0.5s;
+}
+
+/* iconos dentro del a */
+.menu-lugares .menu__item a .icon {
+  padding: 0 10px;
+}
+
+/* CLASES POR AÑADIR CON JS */
+/* Clase mostrar para usarla en el menu responsive */
+.mostrarSection {
+  /* reinicia el margen para que se muestre */
+  margin-top: 0;
+}
+
+/* Fin header section */
+
+/*div, contenedor de los cards en este caso se usaron articles como cards*/
+.hero-info {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+}
+
+/* article, con su clase general para no repetir estilos */
+.hero-info .info-card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  visibility: 0;
+  transition: all 1s;
+}
+
+/* div, contenedor de la info  */
+.hero-info .info-card .capa-info {
+  background-color: #00000063;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* h3, donde se muestra el título */
+.hero-info .info-card .capa-info .title {
+  border: none;
+  color: #f6f6f6;
+  display: block;
+  padding: 20px;
+  margin: 0;
+  font-size: 28pt;
+}
+
+/* p, donde se muestra la info del card */
+.info-card .capa-info .text {
+  text-align: center;
+  padding: 15px 0;
+  line-height: 20px;
+  font-size: 12pt;
+}
+
+/* a, que se usa como botón ver más */
+.info-card .capa-info a {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 20px;
+  transition: all 1s;
+}
+/* Efecto hover a boton ver más */
+.info-card .capa-info a:hover {
+  background-color: #cf7500;
+  border: 2px solid #cf7500;
+  box-shadow: 0 0 10px #cf7500, 0 0 40px #cf7500, 0 0 80px #cf7500;
+}
+
+/* article individual */
+.info-card-1 {
+  background-image: url(../img/index\ cultura.jpg);
+}
+.info-card-2 {
+  background-image: url(../img/index\ aventura.jpg);
+}
+.info-card-3 {
+  background-image: url(../img/index\ naturaleza.jpg);
+}
+.info-card-4 {
+  background-image: url(../img/index\ gastronomia.jpg);
+}
+.info-card-5 {
+  background-image: url(../img/index\ festival.jpg);
+}
+
+/*Para mostrar cada card  */
+.menu__item-1:target {
+  visibility: 1;
+}
+.menu__item-2:target {
+  visibility: 1;
+}
+.menu__item-3:target {
+  visibility: 1;
+}
+.menu__item-4:target {
+  visibility: 1;
+}
+.menu__item-5:target {
+  visibility: 1;
+}
+
+/* TERCER SECTION */
+.section-3 {
+  height: auto;
+  width: 100%;
+}
+
+.section-3 .title {
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  padding: 0 20px;
+  margin: 30px auto;
+  font-size: 25pt;
+}
+
+.section-3 .card {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: right;
+}
+
+.section-3 .card .info {
+  height: 100%;
+  background-color: #0000004f;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  transition: all 1s;
+}
+.section-3 .card .info:hover {
+  background-color: #00000028;
+}
+
+.section-3 .card .info .pagina {
+  max-width: 30%;
+  font-size: 0.7rem;
+  text-align: center;
+  background-color: #000000b0;
+  padding: 3px 15px;
+  margin: 5px 0;
+  border-radius: 25px;
+}
+
+.section-3 .card .info .like {
+  background-image: transparent;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 1s;
+}
+
+.section-3 .card .info .like:hover {
+  color: red;
+}
+.section-3 .card .info .title {
+  border: none;
+  color: #f6f6f6;
+  margin: 0;
+  font-size: 22pt;
+  text-align: right;
+  transition: all 1s;
+}
+
+.section-3 .card .info .subtitle {
+  padding: 15px 0;
+  font-size: 16pt;
+}
+
+.section-3 .card .info .icon {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 1s;
+}
+
+.section-3 .card .info .icon:hover {
+  box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+.section-3 .card-1 {
+  background-image: url(../img/index\ sitio-1.jpg);
+}
+.section-3 .card-2 {
+  background-image: url(../img/index\ sitio-2.jpg);
+}
+.section-3 .card-3 {
+  background-image: url(../img/index\ sitio-3.jpg);
+}
+.section-3 .card-4 {
+  background-image: url(../img/index\ sitio-4.jpg);
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 750px) {
+  /* Para comprobar le ancho del responsive, solo es con fines de diseño */
+  .main__container {
+    /* background-color: red; */
+  }
+
+  /* Para que se oculte el botón desplegar menu */
+  .section-1 .header__section .fa-bars {
+    visibility: hidden;
+    display: none;
+  }
+  .menu-lugares {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+
+  .hero-info .info-card .capa-info {
+    width: 60%;
+  }
+}
+
+/* RESPONSIVE ESCRITORIO */
+@media screen and (min-width: 900px) {
+  .section-0 {
+    display: flex;
+    flex-flow: row;
+    height: auto;
+  }
+
+  .section-3 .card {
+    height: 400px;
+  }
+}

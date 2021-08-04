@@ -1,0 +1,36 @@
+/* CABECERA PORTADA */
+
+.portada {
+  background-image: url(../img/hokkaido.jpg);
+}
+
+/* ----------------------------------------------------- */
+
+/*                   CUERPO DE LA PÀGINA                */
+
+.section-2 .card-1 {
+  background-image: url(../img/hokkaido\ section2-a.jpg);
+}
+.section-2 .card-2 {
+  background-image: url(../img/hokkaido\ section2-b.jpg);
+}
+.section-2 .card-3 {
+  background-image: url(../img/hokkaido\ section2-c.jpg);
+}
+.section-2 .card-4 {
+  background-image: url(../img/hokkaido\ section2-d.jpg);
+}
+
+.section-4 .card-zonas .card-1 {
+  background-image: url(../img/hokkaido\ section4-a.jpg);
+}
+
+.section-4 .card-zonas .card-2 {
+  background-image: url(../img/hokkaido\ section4-b.jpg);
+}
+.section-4 .card-zonas .card-3 {
+  background-image: url(../img/hokkaido\ section4-c.jpg);
+}
+.section-4 .card-zonas .card-4 {
+  background-image: url(../img/hokkaido\ section4-d.jpg);
+}

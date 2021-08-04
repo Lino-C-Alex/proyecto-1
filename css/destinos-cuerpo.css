@@ -1,0 +1,483 @@
+.main__container {
+  background-color: #f0f0f0;
+  height: auto;
+  font-family: Roboto, sans-serif;
+  font-size: 0.8rem;
+}
+
+/* ----------------------------------------------------- */
+
+/*                   CUERPO DE LA PÀGINA                */
+.main {
+  height: auto;
+  width: 100%;
+}
+
+.section {
+  border-bottom: 2px solid #1f1f1f;
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  PRIMER SECTION */
+.section-1 {
+  text-align: justify;
+}
+
+.section-1 .article-1 {
+  margin: 30px;
+}
+
+/* Texto dentro del primer section */
+.section-1 .article-1 span {
+  border-bottom: 2px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  font-size: 18pt;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+}
+.section-1 .article-1 .text {
+  text-align: left;
+  line-height: 25px;
+}
+
+/* article, segundo article del section-1 */
+.section-1 .article-2 {
+  background-image: radial-gradient(circle, #161515, #333232);
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-1 .article-2 .info {
+  padding: 0 20px;
+}
+.section-1 .article-2 .img {
+  height: 220px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.section-1 .article-2 .info .title {
+  color: #cfcfcf;
+  border-bottom: 3px solid #cfcfcf;
+  font-size: 28pt;
+  margin: 20px 0;
+  padding: 0 20px;
+  display: block;
+}
+.section-1 .article-2 .info .text {
+  line-height: 25px;
+  color: #cfcfcf;
+  padding: 10px;
+  font-size: 12pt;
+}
+
+/*  SEGUNDO SECTION */
+.section-2 {
+  width: 100%;
+}
+
+.section-2 .title {
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  font-size: 28pt;
+  display: block;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+/* div, contenedor de los cards */
+.section-2 .card-container {
+  color: #e9e9de;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*div, clase general de los card */
+.section-2 .card {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.section-2 .card:hover {
+  box-shadow: 0 0 25px #0a87cf;
+}
+
+.section-2 .card .card__logo {
+  background-color: #0000003a;
+  width: 100%;
+  height: 250px;
+  padding: 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s ease;
+}
+
+.section-2 .card .title {
+  color: #e9e9de;
+  border: none;
+  font-size: 28pt;
+  text-align: center;
+}
+.section-2 .card__description {
+  background-color: #000000ab;
+  color: #cfcfcf;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: justify;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  /* Para que se oculte */
+  margin-top: -220%;
+  font-size: 12pt;
+  transition: all 1s;
+}
+
+.section-2 .card:hover .card__description {
+  margin-top: 0;
+}
+
+/* Para el efecto del borde bottom */
+.section-2 .card__logo::before {
+  box-shadow: 0 0 25px #cfcfcf;
+  background-color: #cfcfcf;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transition: all 1s ease;
+}
+.section-2 .card:hover .card__logo::before {
+  width: 100%;
+  left: 0;
+}
+
+.card__button {
+  background-color: #0a87cf;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 10px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card__button:hover {
+  background-color: #0a87cf;
+  box-shadow: 0 0 25px #0a87cf;
+}
+
+/* TERCER SECTION */
+
+.section-3 .title {
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.section-3 .card-container {
+  padding: 0 30px;
+}
+
+.section-3 .card {
+  background-image: radial-gradient(circle, #f8f8f8, #c9c9c9);
+  margin-bottom: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+.section-3 .card .img {
+  width: 100%;
+  height: 180px;
+}
+
+.section-3 .card .info {
+  color: #1f1f1f;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.section-3 .card .info .title {
+  border: none;
+  color: #161515;
+  margin: 0;
+  font-size: 23pt;
+  padding: 10px;
+}
+
+.section-3 .card .info .text {
+  font-size: 12pt;
+}
+
+/*  CUARTO SECTION */
+
+.section-4 .title {
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.section-4 .card-zonas {
+  width: 100%;
+  height: auto;
+}
+.section-4 .card-zonas .card {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-4 .card-zonas .card .info {
+  background-color: #00000085;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.section-4 .card-zonas .card:hover .info {
+  background-color: #0000004d;
+}
+.section-4 .card-zonas .card .info .text {
+  font-size: 30pt;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 550px) {
+  /* PRIMER SECTION */
+
+  /* article, segundo article del section-1 */
+
+  /*  SEGUNDO SECTION */
+  .section-2 {
+    flex-flow: wrap;
+  }
+
+  /*div, clase general de los card */
+  .section-2 .card {
+    margin: 20px 0;
+  }
+
+  .section-3 .card {
+    height: 210px;
+    flex-flow: nowrap;
+  }
+  .section-3 .card .img {
+    height: 100%;
+  }
+  .section-3 .card-2,
+  .section-3 .card-4 {
+    flex-flow: row-reverse;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  /* SEGUNDO SECTION */
+
+  /* div, contenedor de los cards */
+  .section-2 .card-container {
+    padding: 10px 50px;
+    display: flex;
+    flex-flow: wrap;
+  }
+  /*div, clase general de los card */
+  .section-2 .card {
+    max-width: 100%;
+    height: 240px;
+    background-position: bottom;
+    flex-flow: row;
+  }
+  /* Para el efecto del borde bottom */
+  .section-2 .card__logo::before {
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+  }
+  .section-2 .card__description {
+    background-color: #0000009f;
+    color: #fff;
+    height: 100%;
+    /* Para que se oculte */
+    margin-top: 0;
+    margin-right: -200%;
+  }
+
+  .section-2 .card:hover .card__description {
+    margin-right: 0;
+  }
+
+  .section-2 .card .title {
+    font-size: 35pt;
+  }
+  .section-2 .card .card__description .text {
+    line-height: 25px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .card__button {
+    font-weight: 400;
+    font-size: 10pt;
+    margin: 0;
+    padding: 12px 30px;
+  }
+}
+
+/* RESPONSIVE ESCRITORIO */
+@media screen and (min-width: 850px) {
+  /* PRIMER SECTION */
+  /* article, segundo article del section-1 */
+  .section-1 .article-2 {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  .section-1 .article-2 .img {
+    flex: 1;
+    height: 300px;
+  }
+  .section-1 .article-2 .info {
+    flex: 1;
+  }
+
+  .section-1 .article-2 .info .img {
+    height: 300px;
+    flex: 2;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  /*  SEGUNDO SECTION */
+  .section-2 {
+    width: 100%;
+  }
+
+  /* div, contenedor de los cards */
+  .section-2 .card-container {
+    padding: 0;
+    flex-flow: row wrap;
+  }
+
+  /*div, clase general de los card */
+  .section-2 .card {
+    height: auto;
+    max-width: 35%;
+    margin: 10px;
+    flex-flow: row wrap;
+  }
+
+  .section-2 .card .card__logo {
+    height: 250px;
+    padding: 0 10px;
+  }
+
+  .section-2 .card .title {
+    font-size: 30pt;
+  }
+  .section-2 .card__description {
+    flex-flow: wrap;
+    /* Para que se oculte */
+    margin-top: -220%;
+  }
+
+  .section-2 .card:hover .card__description {
+    margin-top: 0;
+  }
+  /* Para el efecto del borde bottom */
+  .section-2 .card__logo::before {
+    box-shadow: 0 0 25px #cfcfcf;
+    background-color: #cfcfcf;
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    bottom: 0;
+    transition: all 1s ease;
+  }
+  .section-2 .card:hover .card__logo::before {
+    width: 100%;
+    left: 0;
+  }
+
+  .card__button {
+    margin-top: 10px;
+    padding: 12px 30px;
+  }
+
+  .section-3 .card-container {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+  }
+
+  .section-3 .card {
+    border-radius: 0;
+    height: 520px;
+    width: 40%;
+    margin: 0;
+    flex-flow: column nowrap;
+  }
+  .section-3 .card .img {
+    border: 3px solid goldenrod;
+    height: 50%;
+  }
+
+  .section-3 .card .info {
+    height: 50%;
+    border: 3px solid goldenrod;
+  }
+  .section-3 .card-2,
+  .section-3 .card-4 {
+    flex-flow: column-reverse;
+  }
+}

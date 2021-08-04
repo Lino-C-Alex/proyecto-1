@@ -1,0 +1,151 @@
+.main__header .portada {
+  background-image: url(../img/aboutus.jpg);
+}
+
+/* CUERPO DE LA PÁGINA */
+
+.section {
+  border-bottom: 2px solid #1f1f1f;
+}
+/* PRIMER SECTION */
+.section-1 {
+  /* border: 3px solid green; */
+}
+
+.section-1 .title {
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  padding: 0 20px;
+  margin: 50px;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+  /* border: 3px solid rgb(0, 255, 34); */
+  width: 100%;
+}
+
+.section-2 .card {
+  background-image: url(../img/aboutus\ section-1.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border: 3px solid red; */
+}
+
+.section-2 .card .info {
+  background-color: rgba(0, 0, 0, 0.589);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2 .card .info .title {
+  font-size: 23pt;
+}
+
+.section-2 .card .info .text {
+  line-height: 25px;
+  text-align: justify;
+  padding: 20px;
+  font-size: 12pt;
+}
+
+/* SECTION 4 */
+
+.section-4 .title {
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  padding: 0 20px;
+  margin: 50px;
+  font-size: 20pt;
+}
+
+.section-4 .card-container {
+  background-image: radial-gradient(circle, #ff8800, #cc7410);
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-4 .card-container .card {
+  color: #fff;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-4 .card-container .card .logo {
+  width: 100%;
+  height: 100px;
+}
+
+.section-4 .card-container .card .fas {
+  border-radius: 50%;
+  font-size: 52px;
+}
+
+.section-4 .card-container .card .subtitle {
+  font-size: 22pt;
+  text-align: center;
+}
+
+.section-4 .card-container .card .info {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 15px;
+  height: 50%;
+}
+
+.section-4 .card-container .card .info .text {
+  font-size: 12pt;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 850px) {
+  .main__container {
+  }
+  .section-2 .card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .section-2 .card .info {
+    width: 50%;
+  }
+
+  .section-2 .card .info .title {
+    font-size: 30pt;
+  }
+
+  .section-2 .card .info .text {
+    line-height: 25px;
+    padding: 40px;
+  }
+
+  /* SECTION 4 */
+  .section-4 .card-container {
+    flex-flow: row;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+}

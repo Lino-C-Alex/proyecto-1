@@ -1,0 +1,46 @@
+/* Header principal */
+.main__header {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+/* Primer slider */
+.main__header .portada {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main__header .portada .capa-info {
+  background-color: #0000003a;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main__header .portada .capa-info .main-title {
+  font-size: 40pt;
+  padding: 0 40px;
+}
+.main__header .portada .capa-info .text {
+  font-size: 20pt;
+  padding: 0 40px;
+}
+/* ----------------------------------------------------- */
+
+/*                   CUERPO DE LA PÀGINA                */
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 700px) {
+  /* Primer slider */
+  .main__header .portada {
+    object-fit: cover;
+    object-position: center;
+  }
+}

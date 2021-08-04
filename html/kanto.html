@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto</title>
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Css header y slider -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- Css de cabecera -->
+    <link rel="stylesheet" href="../css/portadas.css">
+    <!-- Css cuerpo de la pag -->
+    <link rel="stylesheet" href="../css/destinos-cuerpo.css">
+    <!-- Css de footer -->
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="../css/kanto.css">
+
+
+
+    <!-- Importaciones para uso de íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+</head>
+
+<body>
+    <div class="main__container">
+        <header class="main__header">
+
+            <!-- Portada principal -->
+            <div class="portada">
+                <div class="capa-info">
+                    <h1 class="main-title">KANTO</h1>
+                    <!-- <p class="text"></p> -->
+                </div>
+            </div>
+            <!-- Fin de portada -->
+
+            <!-- Menu principal -->
+            <div class="main__menu">
+                <!-- Div que contendrá el logo -->
+                <div class="logo">
+                    <!-- Puede ser solo el texto, o creamos un ícono para usarlo como link hacia inicio también -->
+                    <span>Destinos</span>
+                    <span>Imperdibles</span>
+                </div>
+
+            </div>
+
+            <!-- Icono para el menú respnsive -->
+            <i class="fas fa-bars" id="btnMenu"></i>
+
+            <!-- Nav principal del header -->
+            <nav class="main__nav">
+
+                <!-- Lista del menú principal -->
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="../index.html">Inicio</a></li>
+                    <!-- Para el submenu destinos se coloca una clase para diferenciar -->
+                    <li class="menu__item container__submenu">
+                        <a href="#" class="btnSubmenu"> Destinos
+                            <i class="fas fa-caret-down submenu__icon"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="hokkaido.html">Hokkaido</a></li>
+                            <li class="submenu__item"><a href="kansai.html">Kansai</a></li>
+                            <li class="submenu__item"><a href="#">Kanto</a></li>
+                            <li class="submenu__item"><a href="okinawa.html">Okinawa</a></li>
+                        </ul>
+                    </li>
+                    <li class=" menu__item"><a href="aboutus.html">Sobre nosotros</a></li>
+                    <li class="menu__item"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Fin del nav principal -->
+
+            <!-- Fin del menu princpal -->
+        </header>
+        <!-- Fin del header -->
+        <main class="main">
+            <section class="section section-1">
+                <article class="article-1">
+                    <span>La región de Kanto, aparte de acoger a la metrópoli más grande del mundo, Tokio, también
+                        ofrece escapadas a la montaña y
+                        hermosas islas subtropicales</span>
+                </article>
+                <article class="article-2">
+                    <div class="info">
+                        <h2 class="title">Cómo llegar</h2>
+                        <p class="text">Kanto cuenta con dos aeropuertos internacionales, Haneda y Narita. Desde ellos,
+                            puedes llegar al centro de Tokio con
+                            autobús regular o limusina, en el monorraíl (solo desde Haneda) o en tren. El Narita Express
+                            (N'EX) y el Keisei Skyliner
+                            son trenes del JR y privados que conectan Tokio y el aeropuerto internacional de Narita.</p>
+                    </div>
+                    <img src="../img/kanto map.png" alt="" class="img">
+                </article>
+            </section>
+            <section class="section section-2">
+                <h2 class="title">Lugares de interés de moda en Kanto</h2>
+                <div class="card-container">
+                    <div class="card card-1">
+                        <div class="card__logo">
+                            <p class="title">Palacio Imperial</p>
+                        </div>
+                        <div class="card__description">
+                            <p class="text">Ven a conocer el jardín, los tesoros artísticos y los terrenos del castillo
+                                imperial
+                                El Palacio Imperial, residencia del emperador de Japón, se construyó en el lugar donde
+                                se erigía el castillo de Edo,
+                                residencia del shogun antes de 1868. El recinto está protegido por amplios fosos y
+                                gruesas murallas.
+                            </p>
+                            <button class="card__button">Más información</button>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <div class="card__logo">
+                            <p class="title">Estación de Tokio</p>
+                        </div>
+                        <div class="card__description">
+                            <p class="text">Detrás de la tradicional estructura de la estación de Tokio se esconden una
+                                gran cantidad de tiendas y restaurantes
+                                modernos
+                                La estación de Tokio es una importante puerta de entrada a la capital para los
+                                visitantes que llegan en el tren bala o
+                                desde el aeropuerto de Narita.</p>
+                            <button class="card__button">Más información</button>
+                        </div>
+                    </div>
+
+                    <div class="card card-3">
+                        <div class="card__logo">
+                            <p class="title">Bosque de Totoro</p>
+                        </div>
+                        <div class="card__description">
+                            <p class="text">Adéntrate en un paisaje típico de los estudios Ghibli en el bosque de Totoro
+                                de Saitama
+                                El parque de las colinas de Sayama, el bosque de Totoro, toma su apodo de la conocida
+                                película de los estudios Ghibli,
+                                cuyas imágenes se inspiran en él.
+                            </p>
+                            <button class="card__button">Más información</button>
+                        </div>
+                    </div>
+                    <div class="card card-4">
+                        <div class="card__logo">
+                            <p class="title">Koedo Kawagoe</p>
+                        </div>
+                        <div class="card__description">
+                            <p class="text">Un popular paisaje urbano del período Edo cerca de Tokio
+                                Kawagoe no está lejos de Tokio , pero se respira un ambiente totalmente diferente.
+                                Koedo, que significa «pequeña Edo».</p>
+                            <button class="card__button">Más información</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section section-3">
+                <h2 class="title">Aspectos detacados por estación</h2>
+                <div class="card-container">
+                    <article class="card card-1">
+                        <img src="../img/kanto section3-a.jpg" alt="" class="img">
+                        <div class="info">
+                            <h3 class="title">Primavera</h3>
+                            <p class="text">Contempla cómo la ciudad adquiere una apariencia más suave con la floración
+                                de los ciruelos y los cerezos. Túmbate en
+                                una esterilla, bebe sake y come empanadillas japonesas bajo las flores en los parques
+                                Shinjuku Gyoen, Yoyogi, Ueno o
+                                Inokashira.</p>
+                        </div>
+                    </article>
+                    <article class="card card-2">
+                        <img src="../img/kanto section3-b.jpg" alt="" class="img">
+                        <div class="info">
+                            <h3 class="title">Verano</h3>
+                            <p class="text">Disfruta de uno de los principales espectáculos de fuegos artificiales de
+                                Japón en el río Sumida. Dirígete al monte
+                                Takao para disfrutar de las terrazas de sus cervecerías y ver unas cuantas luciérnagas.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card card-3">
+                        <img src="../img/kanto section3-c.jpg" alt="" class="img">
+                        <div class="info">
+                            <h3 class="title">Otoño</h3>
+                            <p class="text">El follaje otoñal de Kansai atrae a turistas de todas las partes del mundo.
+                                Los festivales de la luna de cosecha, como el
+                                de Jidai Matsuri, también son algo especial del otoño. La caída de las temperaturas hace
+                                que este período sea
+                                especialmente idóneo para hacer senderismo en los montes Ponpon y Atago</p>
+                        </div>
+                    </article>
+                    <article class="card card-4">
+                        <img src="../img/kanto section3-d.jpg" alt="" class="img">
+                        <div class="info">
+                            <h3 class="title">Invierno</h3>
+                            <p class="text">La ciudad se ilumina por completo con luces invernales, abren las los
+                                ciudadanos con ganas de diversión llenan el templo
+                                Sensoji y el santuario Meiji-jingu para las peregrinaciones y las festividades de Año
+                                Nuevo.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+            <section class="section section-4">
+                <h2 class="title">Explorar Kansai por zona</h2>
+                <div class="card-zonas">
+                    <article class="card card-1">
+                        <div class="info">
+                            <p class="text">Nakameguro</p>
+                        </div>
+                    </article>
+                    <article class="card card-2">
+                        <div class="info">
+                            <p class="text">Tochigi</p>
+                        </div>
+                    </article>
+                    <article class="card card-3">
+                        <div class="info">
+                            <p class="text">Península de Boso</p>
+                        </div>
+                    </article>
+                    <article class="card card-4">
+                        <div class="info">
+                            <p class="text">Hakone</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Para ícono wsp -->
+            <a href="https://api.whatsapp.com/send?phone=921041937" class="btnwsp" target="_blank"><i
+                    class="fab fa-whatsapp wsp-icon"></i></a>
+
+            <footer class="footer">
+                <div class="content">
+                    <div class="aboutus">
+                        <div class="logo">
+                            <span>Destinos</span>
+                            <span>Imperdibles</span>
+                        </div>
+
+                        <h3 class="title">Sobre nosotros</h3>
+                        <p class="text">Descubre las maravillas del país del sol naciente en una sola web de forma
+                            rápida y
+                            eficaz</p>
+
+                        <div class="icon-container">
+                            <i class="fab fa-facebook-f icon"></i>
+                            <i class="fab fa-twitter icon"></i>
+                            <i class="fas fa-envelope icon"></i>
+                            <i class="fab fa-instagram icon"></i>
+                            <i class="fab fa-youtube icon"></i>
+                        </div>
+
+                    </div>
+                    <div class="menu-footer">
+                        <h3 class="title">Menú de Navegación</h3>
+
+                        <nav class="footer-nav">
+                            <ul class="menu">
+                                <li class="menu__item"><a href="../index.html">Inicio</a></li>
+                                <li class="menu__item"><a href="#">Destinos</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="hokkaido.html">Hokkaido</a>
+                                        </li>
+                                        <li class="submenu__item"><a href="kansai.html">Kansai</a></li>
+                                        <li class="submenu__item"><a href="#">Kanto</a></li>
+                                        <li class="submenu__item"><a href="okinawa.html">Okinawa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="aboutus.html">Sobre Nosotros</a></li>
+                                <li class="menu__item"><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contact-footer">
+                        <h3 class="title">Contacto</h3>
+                        <div class="info">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <p class="text">Lima - Perú</p>
+                        </div>
+                        <div class="info">
+                            <i class="fas fa-mobile-alt icon"></i>
+                            <p class="text">555-555-555</p>
+                        </div>
+                        <div class="info">
+                            <i class="far fa-envelope icon"></i>
+                            <p class="text">destinosimperdibles@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p class="text">2021 - Todos los derechos reservados</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <!-- Fin del contenedor principal -->
+    <!-- Vinculamos los archivos js -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/menu-section.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+
+</html>

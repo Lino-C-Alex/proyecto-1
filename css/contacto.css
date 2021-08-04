@@ -1,0 +1,208 @@
+.main__header .portada {
+  background-image: url(../img/contact.jpg);
+}
+
+/* CUERPO DE LA PÁGINA */
+
+.section {
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #fff;
+}
+
+/* PRIMER SECTION */
+.section-1 {
+  /* border: 3px solid green; */
+  color: #fff;
+  background-image: url(../img/contact\ tokyo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.section-1 .contact__container {
+  background-color: #000000a4;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.section-1 .contact__container .title {
+  margin: 20px 0;
+  color: #f6f6f6;
+  display: block;
+  padding: 0 20px;
+  font-size: 30pt;
+}
+
+.section-1 .contact__container .contact {
+  width: 100%;
+  padding: 10px 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.section-1 .contact__container .contact .icon {
+  color: #ededed;
+  background-image: radial-gradient(circle, #292828, #303030);
+  padding: 12px 15px;
+  margin: 0 20px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: all 0.5s;
+}
+
+.section-1 .contact__container .contact:hover .icon {
+  color: #00bcd4;
+  box-shadow: 0 0 10px #0095cf, 0 0 40px #0095cf, 0 0 80px #0095cf;
+}
+.section-1 .contact__container .contact .far {
+  padding: 12px 10px;
+}
+
+.section-1 .contact__container .contact .info {
+  text-align: left;
+}
+
+.section-1 .contact__container .contact .info .subtitle {
+  text-align: left;
+  color: #00bcd4;
+}
+
+/* div, contenedor del form */
+.section-1 .form__container {
+  background-color: #000000a4;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1 .form__container .title {
+  color: #f6f6f6;
+  display: block;
+  padding: 20px;
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 22pt;
+  text-transform: uppercase;
+}
+
+.section-1 .form__container .form {
+  background-image: radial-gradient(circle, #3b3a3a, #161616);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  transition: all 1s;
+}
+.section-1 .form__container .form:hover {
+  box-shadow: -1px 4px 28px 0px #f7f7f7bf;
+}
+
+.section-1 .form__container .form .inputbox {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+.section-1 .form__container .form .inputbox .label {
+  color: #ededed;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.section-1 .form__container .form .inputbox input[type="text"],
+textarea {
+  background-color: #ededed;
+  width: 100%;
+  color: #0095cf;
+  border: none;
+  border-bottom: 3px solid #474747;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 4px;
+  outline: none;
+  resize: none;
+  font-size: 12pt;
+  transition: all 1s;
+}
+
+.section-1 .form__container .form .inputbox input[type="submit"] {
+  background-color: #00bcd4;
+  color: #f0f0f0;
+  width: 80%;
+  padding: 10px 25px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 20px;
+  font-size: 14pt;
+  font-weight: 900;
+  transition: all 0.5s;
+}
+
+.section-1 .form__container .form .inputbox input[type="submit"]:hover {
+  background-color: #0095cf;
+  box-shadow: 0 0 10px #0095cf, 0 0 40px #0095cf, 0 0 80px #0095cf;
+}
+
+/* SEGUNDO SECTION */
+.section-2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.section-2 .map {
+  width: 100%;
+  padding: 10px;
+}
+
+.section-2 .title {
+  margin: 20px 0;
+  border-bottom: 3px solid #163f6d;
+  color: #163f6d;
+  display: block;
+  padding: 0 20px;
+  font-size: 25pt;
+}
+
+@media screen and (min-width: 800px) {
+  /* Solo con fines de diseño */
+  .main__container {
+    /* background-color: black; */
+  }
+
+  /* PRIMER SECTION */
+  .section-1 .form__container .form .inputbox input[type="text"],
+  textarea {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .section-1 .form__container .form .inputbox .label {
+    padding: 10px 40px;
+  }
+
+  /* SEGUNDO SECTION */
+  .section-1 {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+  }
+
+  .section-2 {
+    padding: 50px;
+  }
+}

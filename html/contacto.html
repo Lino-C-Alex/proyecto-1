@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Css header y slider -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- Css de cabecera -->
+    <link rel="stylesheet" href="../css/portadas.css">
+    <!-- Css cuerpo de la pag -->
+    <link rel="stylesheet" href="../css/destinos-cuerpo.css">
+    <!-- Css de footer -->
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="../css/contacto.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+</head>
+
+<body>
+    <div class="main__container">
+        <header class="main__header">
+
+            <!-- Portada principal -->
+            <div class="portada">
+                <div class="capa-info">
+                    <h1 class="main-title">CONTACTO</h1>
+                    <p class="text">Realice sus consultas sobre nuestros servicios</p>
+                </div>
+            </div>
+            <!-- Fin de portada -->
+
+            <!-- Menu principal -->
+            <div class="main__menu">
+                <!-- Div que contendrá el logo -->
+                <div class="logo">
+                    <!-- Puede ser solo el texto, o creamos un ícono para usarlo como link hacia inicio también -->
+                    <span>Destinos</span>
+                    <span>Imperdibles</span>
+                </div>
+
+            </div>
+
+            <!-- Icono para el menú respnsive -->
+            <i class="fas fa-bars" id="btnMenu"></i>
+
+            <!-- Nav principal del header -->
+            <nav class="main__nav">
+
+                <!-- Lista del menú principal -->
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="../index.html">Inicio</a></li>
+                    <li class="menu__item container__submenu">
+                        <a href="#" class="btnSubmenu"> Destinos
+                            <i class="fas fa-caret-down submenu__icon"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="hokkaido.html">Hokkaido</a></li>
+                            <li class="submenu__item"><a href="kansai.html">Kansai</a></li>
+                            <li class="submenu__item"><a href="kanto.html">Kanto</a></li>
+                            <li class="submenu__item"><a href="okinawa.html">Okinawa</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="menu__item"><a href="ruta_japon.html">Ruta por Japón</a></li> -->
+                    <li class=" menu__item"><a href="aboutus.html">Sobre nosotros</a></li>
+                    <li class="menu__item"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Fin del nav principal -->
+
+            <!-- Fin del menu princpal -->
+        </header>
+        <!-- Fin del header -->
+        <main class="main">
+            <section class="section section-1">
+                <div class="form__container">
+
+                    <form name="form" method="post" action="enviar.php" class="form">
+                        <h3 class="title">Envíanos un Mensaje</h3>
+                        <div class="inputbox">
+                            <label for="name" class="label">Nombres</label>
+                            <input type="text" name="name" required="required" placeholder="Nombres y Apellidos">
+                        </div>
+                        <div class="inputbox">
+                            <label for="email" class="label">Email</label>
+                            <input type="text" name="email" required="required" placeholder="Email">
+                        </div>
+                        <div class="inputbox">
+                            <label for="name" class="label">Asunto</label>
+                            <input type="text" name="asunto" required="required" placeholder="Asunto">
+                        </div>
+                        <div class="inputbox">
+                            <label for="name" class="label">Mensaje</label>
+                            <textarea name="mensaje" required="required" placeholder="Escriba su Mensaje"></textarea>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" name="send" required="required" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__container">
+                    <h2 class="title">Contáctanos</h2>
+                    <div class="contact">
+                        <i class="fas fa-map-marker-alt icon"></i>
+                        <div class="info">
+                            <h3 class="subtitle">Dirección</h3>
+                            <p class="text">Lima - Perú</p>
+                        </div>
+
+                    </div>
+                    <div class="contact">
+                        <i class="fas fa-mobile-alt icon"></i>
+                        <div class="info">
+                            <h3 class="subtitle">Teléfono</h3>
+                            <p class="text">555-555-555</p>
+                        </div>
+
+                    </div>
+                    <div class="contact">
+                        <i class="far fa-envelope icon"></i>
+                        <div class="info">
+                            <h3 class="subtitle">Email</h3>
+                            <p class="text">destinosimperdibles@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-2">
+                <h2 class="title">UBÍCANOS</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7799.020883524834!2d-76.93531527202559!3d-12.213678500920448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9580e03b483%3A0x1cbf0d56c84182c5!2sInstituto%20Superior%20Tecnol%C3%B3gico%20P%C3%BAblico%20Julio%20Cesar%20Tello!5e0!3m2!1ses-419!2spe!4v1627220431951!5m2!1ses-419!2spe"
+                    width="80%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+            </section>
+
+            <!-- Para ícono wsp -->
+            <a href="https://api.whatsapp.com/send?phone=921041937" class="btnwsp" target="_blank"><i
+                    class="fab fa-whatsapp wsp-icon"></i></a>
+
+            <footer class="footer">
+                <div class="content">
+                    <div class="aboutus">
+                        <div class="logo">
+                            <span>Destinos</span>
+                            <span>Imperdibles</span>
+                        </div>
+
+                        <h3 class="title">Sobre nosotros</h3>
+                        <p class="text">Descubre las maravillas del país del sol naciente en una sola web de forma
+                            rápida y
+                            eficaz</p>
+
+                        <div class="icon-container">
+                            <i class="fab fa-facebook-f icon"></i>
+                            <i class="fab fa-twitter icon"></i>
+                            <i class="fas fa-envelope icon"></i>
+                            <i class="fab fa-instagram icon"></i>
+                            <i class="fab fa-youtube icon"></i>
+                        </div>
+
+                    </div>
+                    <div class="menu-footer">
+                        <h3 class="title">Menú de Navegación</h3>
+
+                        <nav class="footer-nav">
+                            <ul class="menu">
+                                <li class="menu__item"><a href="/index.html">Inicio</a></li>
+                                <li class="menu__item"><a href="#">Destinos</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item"><a href="hokkaido.html">Hokkaido</a>
+                                        </li>
+                                        <li class="submenu__item"><a href="kansai.html">Kansai</a></li>
+                                        <li class="submenu__item"><a href="kanto.html">Kanto</a></li>
+                                        <li class="submenu__item"><a href="okinawa.html">Okinawa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="aboutus.html">Sobre Nosotros</a></li>
+                                <li class="menu__item"><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contact-footer">
+                        <h3 class="title">Contacto</h3>
+                        <div class="info">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <p class="text">Lima - Perú</p>
+                        </div>
+                        <div class="info">
+                            <i class="fas fa-mobile-alt icon"></i>
+                            <p class="text">555-555-555</p>
+                        </div>
+                        <div class="info">
+                            <i class="far fa-envelope icon"></i>
+                            <p class="text">destinosimperdibles@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p class="text">2021 - Todos los derechos reservados</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <!-- Fin del contenedor principal -->
+    <!-- Vinculamos los archivos js -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/menu-section.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+
+</html>

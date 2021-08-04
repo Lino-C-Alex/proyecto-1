@@ -1,0 +1,259 @@
+/* footer contenedor */
+.footer {
+  background-color: #000000ee;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  margin-top: 110px;
+}
+
+/* div, contenedor general hasta antes del copyright */
+.footer .content {
+  color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+}
+
+/* div, contenedor de aboutus y logo */
+.footer .aboutus {
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+/*div, contenedor del logo  */
+.footer .aboutus .logo {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* primer span hijo de .logo */
+.footer .aboutus .logo span:first-child {
+  font-size: 28pt;
+  color: #0083cc;
+}
+/* segundo span hijo de .logo */
+.footer .aboutus .logo span:last-child {
+  border-bottom: 2px solid #f6f6f6;
+  font-size: 15pt;
+  padding-left: 20px;
+  font-weight: 900;
+}
+
+.footer .aboutus .title {
+  padding: 10px;
+}
+
+.footer .aboutus .text {
+  font-size: 11pt;
+  padding: 5px 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+/*div, contenedor de íconos */
+.footer .aboutus .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* i, con sus clases generales fab y fas */
+.footer .aboutus .icon-container .fab,
+.fas {
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.icon:hover {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.footer .aboutus .icon-container .fa-facebook-f:hover {
+  background-color: #1142ca;
+  box-shadow: 0 0 10px #1142ca, 0 0 40px #1142ca, 0 0 80px #1142ca;
+}
+.footer .aboutus .icon-container .fa-twitter:hover {
+  background-color: #0083cc;
+  box-shadow: 0 0 10px #0083cc, 0 0 40px #0083cc, 0 0 80px #0083cc;
+}
+.footer .aboutus .icon-container .fa-envelope:hover {
+  background-color: #c46e0c;
+  box-shadow: 0 0 10px #c46e0c, 0 0 40px #c46e0c, 0 0 80px #c46e0c;
+}
+.footer .aboutus .icon-container .fa-instagram:hover {
+  background-color: #da60eb;
+  box-shadow: 0 0 10px #da60eb, 0 0 40px #da60eb, 0 0 80px #da60eb;
+}
+.footer .aboutus .icon-container .fa-instagram:hover {
+  box-shadow: 0 0 10px #da60eb, 0 0 40px #da60eb, 0 0 80px #da60eb;
+}
+.footer .aboutus .icon-container .fa-youtube:hover {
+  background-color: #ca1111;
+  box-shadow: 0 0 10px #ca1111, 0 0 40px #ca1111, 0 0 80px #ca1111;
+}
+
+/* div, contenedor del menu para footer */
+.footer .menu-footer {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  padding: 10px;
+}
+
+/* h3, del menu-footer */
+.footer .menu-footer .title {
+  padding: 10px 0 0;
+}
+/* nav, contenedor del menu de navegacion */
+.footer-nav {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+}
+
+/* ul, contenedor de la lista */
+.footer-nav .menu {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  padding: 7px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* li, clase general para los elementos de la lista */
+.footer-nav .menu .menu__item {
+  border-bottom: 2px solid transparent;
+  display: block;
+  padding: 4px 15px;
+  width: 100%;
+  transition: all 1s;
+}
+
+/* a, dentro de los li */
+.footer-nav .menu .menu__item a {
+  color: #fff;
+  width: 100%;
+  padding: 18px;
+  font-size: 12pt;
+  font-weight: bold;
+}
+.footer-nav .menu .menu__item:hover {
+  border-bottom: 2px solid #c46e0c;
+}
+
+/* li, dentro del ul submenu */
+.footer-nav .menu .menu__item .submenu__item {
+  border-bottom: 2px solid transparent;
+  padding: 5px 60px;
+}
+
+.footer-nav .menu .menu__item .submenu .submenu__item a {
+  padding: 0;
+  margin-bottom: 5px;
+  transition: all 1s;
+}
+.footer-nav .menu .menu__item .submenu .submenu__item:hover a {
+  border-bottom: 2px solid #ff7b2f;
+}
+
+.footer .contact-footer {
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+.footer .contact-footer .title {
+  padding: 10px;
+}
+.footer .contact-footer .info {
+  width: 100%;
+  padding: 0 10px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer .contact-footer .info .icon {
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.footer .contact-footer .info .text {
+  font-size: 11pt;
+  padding: 0 0 3px;
+}
+
+.footer .copy {
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .copy .text {
+  font-size: 10pt;
+}
+
+/* PARA EL ICONO DE WSP */
+.btnwsp {
+  background-image: radial-gradient(circle, #0df053, #09b43f);
+  color: #fff;
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 1s;
+}
+
+.btnwsp:hover {
+  background-image: radial-gradient(circle, #fff, #fff);
+  color: #0df053;
+  text-decoration: none;
+  box-shadow: 0 0 10px #0df053, 0 0 40px #0df053, 0 0 80px #0df053;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (min-width: 700px) {
+  /* logo wsp */
+  .btnwsp {
+    bottom: 100px;
+    right: 10px;
+  }
+
+  .footer .content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+  }
+
+  .footer .aboutus {
+    border: none;
+  }
+  .footer .menu-footer {
+    border: none;
+    padding: none;
+  }
+
+  .footer .contact-footer {
+    border: none;
+  }
+}
