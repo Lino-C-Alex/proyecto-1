@@ -61,7 +61,7 @@
   padding: 0 20px;
 }
 .section-1 .article-2 .img {
-  height: 220px;
+  height: 250px;
   width: 100%;
   border-radius: 20px;
 }
@@ -70,15 +70,15 @@
   color: #cfcfcf;
   border-bottom: 3px solid #cfcfcf;
   font-size: 28pt;
-  margin: 20px 0;
-  padding: 0 20px;
+  margin: 20px auto;
   display: block;
 }
 .section-1 .article-2 .info .text {
   line-height: 25px;
   color: #cfcfcf;
-  padding: 10px;
-  font-size: 12pt;
+  padding: 10px 0;
+  font-size: 13pt;
+  font-weight: 500;
 }
 
 /*  SEGUNDO SECTION */
@@ -158,7 +158,7 @@
   align-items: center;
   justify-content: center;
   /* Para que se oculte */
-  margin-top: -220%;
+  margin-top: -300%;
   font-size: 12pt;
   transition: all 1s;
 }
@@ -287,6 +287,7 @@
 }
 .section-4 .card-zonas .card .info .text {
   font-size: 30pt;
+  padding: 0 15px;
 }
 
 /* RESPONSIVE TABLET */

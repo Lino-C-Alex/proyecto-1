@@ -75,7 +75,7 @@
   height: auto;
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -166,7 +166,7 @@
 /*div, contenedor de los cards en este caso se usaron articles como cards*/
 .hero-info {
   width: 100%;
-  height: 400px;
+  height: 700px;
   position: relative;
   display: flex;
   flex-flow: column wrap;
@@ -192,7 +192,7 @@
   width: 100%;
   padding: 20px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -202,17 +202,17 @@
   border: none;
   color: #f6f6f6;
   display: block;
-  padding: 20px;
+  padding: 5px 0;
   margin: 0;
-  font-size: 28pt;
+  font-size: 30pt;
 }
 
 /* p, donde se muestra la info del card */
 .info-card .capa-info .text {
-  text-align: center;
+  text-align: justify;
   padding: 15px 0;
-  line-height: 20px;
-  font-size: 12pt;
+  line-height: 25px;
+  font-size: 13pt;
 }
 
 /* a, que se usa como botón ver más */

@@ -36,8 +36,10 @@
 }
 
 .slider__section .main-title {
+  display: block;
+  margin: 0 auto;
   margin-top: 32px;
-  font-size: 40pt;
+  font-size: 30pt;
   padding: 30px 0;
 }
 
@@ -161,7 +163,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 79px;
+  top: 84.5px;
   right: 0;
   visibility: hidden;
 }

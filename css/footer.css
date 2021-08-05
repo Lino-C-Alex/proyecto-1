@@ -211,8 +211,8 @@
   background-image: radial-gradient(circle, #0df053, #09b43f);
   color: #fff;
   position: fixed;
-  bottom: 70px;
-  right: 10px;
+  bottom: 20%;
+  right: 8%;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -225,8 +225,6 @@
 }
 
 .btnwsp:hover {
-  background-image: radial-gradient(circle, #fff, #fff);
-  color: #0df053;
   text-decoration: none;
   box-shadow: 0 0 10px #0df053, 0 0 40px #0df053, 0 0 80px #0df053;
 }
